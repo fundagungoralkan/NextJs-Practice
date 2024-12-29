@@ -1,11 +1,23 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Hero from 'public/hero.png'
+
 
 export default function Home() {
   return (
-   <div>
-   <Image width={500} height={500}  src="https://images.pexels.com/photos/17565564/pexels-photo-17565564/free-photo-of-lighthouse-among-palm-trees.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"  alt=""  className={styles.img}/>
-   </div>
+    <div className={styles.container}>
+      <div className={styles.item}>
+        <h1 className={styles.title}>
+          Better design for your digital products.
+        </h1>
+        <p className={styles.desc}>
+          Turning your Idea into Reality. We bring together the teams from the
+          global tech industry.
+        </p>
+        <button className={styles.button}>See Our Works</button>
+      </div>
+      <div className={styles.item}>
+        <Image src="/hero.png" width={1920}   height={1080}   alt="" className={styles.img} />
+      </div>
+    </div>
   );
 }
