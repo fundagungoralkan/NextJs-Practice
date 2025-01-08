@@ -23,8 +23,6 @@ async function getData(id) {
 
 
 
-
-
 const BlogPost = async ({params}) => {
   return (
     <div className={styles.container}>
