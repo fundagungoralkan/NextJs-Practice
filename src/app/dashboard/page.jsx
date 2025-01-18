@@ -1,8 +1,12 @@
-import React from 'react'
+"use client"
+import React,{useState,useEffect} from 'react'
+import styles from "./page.module.css"
+
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+ 
+    <div> </div>
   )
 }
 
